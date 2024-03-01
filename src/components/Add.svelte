@@ -1,0 +1,11 @@
+<script lang="ts">
+
+    import { count_val } from "../store";
+
+    const add = () => {
+        count_val.update(prev => prev += 1);
+    }
+
+</script>
+
+<button on:click={add}>+</button>
