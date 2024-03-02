@@ -1,6 +1,6 @@
 <script context="module">
 	import { getProductDetails } from '../../store'; 
-    	
+
 	export async function load(ctx) {
 		let handle = ctx.page.params.handle;
 		const product = await getProductDetails(handle);

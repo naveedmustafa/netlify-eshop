@@ -26,10 +26,10 @@
 				</li>				
 				<li class="main-nav-item">
 					<a href="/contact">Contact</a>
-				</li>						
+				</li>
 				<li class="main-nav-item">
 					<div class="cart-size">{count || 0}</div>
-					<a href="/cart">Cart</a>
+					<a href="#">Cart</a>
 				</li>
 			</ul>
 		</nav>
