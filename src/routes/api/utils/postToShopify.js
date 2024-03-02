@@ -1,12 +1,12 @@
 export const postToShopify = async ({ query, variables }) => {
 	try {
 		// @ts-ignore
-		let result = await fetch(`${import.meta.env.VITE_SHOPIFY_API_ENDPOINT}/admin/api/2024-01/graphql.json`, {
+		let result = await fetch(`https://blendium.myshopify.com/admin/api/2024-01/graphql.json`, {
 			mode: 'no-cors',
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'X-Shopify-Access-Token': `${import.meta.env.VITE_SHOPIFY_STOREFRONT_API_TOKEN}`
+				'X-Shopify-Access-Token': `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`
 			},
 			body: JSON.stringify({ query })
 		});
